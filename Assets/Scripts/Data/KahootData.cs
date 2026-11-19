@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-/// <summary>Data model of a questionnaire (serialised as JSON).</summary>
 [Serializable]
 public class KahootData
 {
@@ -10,7 +9,6 @@ public class KahootData
     public List<KahootQuestion> questions;
 }
 
-/// <summary>Data model of a single question.</summary>
 [Serializable]
 public class KahootQuestion
 {

@@ -38,7 +38,7 @@ public class ReportsListUI : MonoBehaviour
                 button.GetComponentInChildren<TMP_Text>().text = Path.GetFileName(reportPath);
 
                 string path = reportPath;
-                button.onClick.AddListener(() =>
+                button.onClick.AddListener(() => 
                 {
                     GameSession.SelectedReportPath = path;
                     SceneLoader.Load("ReportViewer");

@@ -116,7 +116,7 @@ public class KahootGameController : MonoBehaviour
         timerText.text = second.ToString();
         timerSlider.value = ratio;
 
-        // Verde -> amarillo -> rojo segun el tiempo que queda.
+        // Verde -> amarillo -> rojo segun el tiempo que queda
         Image fill = timerSlider.fillRect.GetComponent<Image>();
         fill.color = ratio > 0.5f ? answerColors[3] : (ratio > 0.25f ? answerColors[2] : answerColors[0]);
         timerText.color = remainingTime <= 5f ? Color.red : Color.white;
@@ -141,7 +141,7 @@ public class KahootGameController : MonoBehaviour
         {
             GameSession.CorrectAnswers++;
 
-            // Mas puntos cuanto mas tiempo queda.
+            // Más puntos cuanto más tiempo queda
             int points = Mathf.CeilToInt(1000 * (remainingTime / questionDuration));
             score += points;
 
@@ -159,7 +159,7 @@ public class KahootGameController : MonoBehaviour
             PlayClip(incorrectClips[Random.Range(0, incorrectClips.Length)]);
         }
 
-        // Como en Kahoot: las incorrectas se apagan y la correcta se resalta.
+        // Como en Kahoot: las incorrectas se apagan y la correcta se resalta
         for (int i = 0; i < answerButtons.Length; i++)
         {
             answerButtons[i].interactable = false;

@@ -46,7 +46,7 @@ public class LeaderboardUI : MonoBehaviour
 
         try
         {
-            // Si no existe el XML el ranking sale vacio.
+            // Si no existe el XML el ranking sale vacio
             LeaderboardData data = LeaderboardManager.LoadLeaderboard(kahootNames[index]);
             statusText.text = data.entries.Count == 0 ? "Todavía no hay puntuaciones." : "";
 
@@ -61,7 +61,7 @@ public class LeaderboardUI : MonoBehaviour
                 row.transform.Find("TimeText").GetComponent<TMP_Text>().text = entry.totalTime.ToString("F1") + "s";
                 row.transform.Find("DateText").GetComponent<TMP_Text>().text = entry.date;
 
-                // Podio: oro, plata y bronce.
+                // Podio: oro, plata y bronce
                 if (i < 3)
                 {
                     Color[] podium = { new Color32(0xFF, 0xC8, 0x3D, 255), new Color32(0xC9, 0xD1, 0xE6, 255), new Color32(0xD9, 0x8B, 0x4E, 255) };

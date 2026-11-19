@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-/// <summary>Creates and reads plain-text error reports stored under persistentDataPath/ErrorReports.</summary>
 public static class ExceptionManager
 {
     public static void Log(string context, Exception exception, string developerMessage)
@@ -46,19 +45,15 @@ public static class ExceptionManager
         }
         catch (Exception loggingException)
         {
-            // The logger must never crash the application.
             Debug.LogError("Could not create error report: " + loggingException.Message);
         }
     }
 
-    /// <summary>Returns all report paths, newest first (the file name starts with the timestamp).</summary>
     public static string[] GetReports()
     {
         KahootManager.InitializeFolders();
 
-        return Directory.GetFiles(KahootManager.ReportsPath, "*.txt")
-            .OrderByDescending(p => Path.GetFileName(p), StringComparer.Ordinal)
-            .ToArray();
+        return Directory.GetFiles(KahootManager.ReportsPath, "*.txt").OrderByDescending(p => Path.GetFileName(p), StringComparer.Ordinal).ToArray();
     }
 
     public static string ReadReport(string path)

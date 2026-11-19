@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-/// <summary>Loads, validates and saves questionnaires (JSON) and owns the data folders.</summary>
 public static class KahootManager
 {
     public const int MaxTitleLength = 60;
@@ -12,12 +11,6 @@ public static class KahootManager
     public static string LeaderboardsPath => Path.Combine(Application.persistentDataPath, "Leaderboards");
     public static string ReportsPath => Path.Combine(Application.persistentDataPath, "ErrorReports");
 
-    private static readonly string[] ReservedNames =
-    {
-        "CON", "PRN", "AUX", "NUL", "COM1", "COM2", "COM3", "COM4", "COM5", "COM6", "COM7", "COM8", "COM9",
-        "LPT1", "LPT2", "LPT3", "LPT4", "LPT5", "LPT6", "LPT7", "LPT8", "LPT9"
-    };
-
     public static void InitializeFolders()
     {
         Directory.CreateDirectory(KahootsPath);
@@ -25,7 +18,6 @@ public static class KahootManager
         Directory.CreateDirectory(ReportsPath);
     }
 
-    /// <summary>Identifiers (file names without extension) of default and external Kahoots.</summary>
     public static List<string> GetAvailableKahoots()
     {
         InitializeFolders();
@@ -62,7 +54,6 @@ public static class KahootManager
         list.Add(value);
     }
 
-    /// <summary>True if a Kahoot (default or external) already uses this identifier.</summary>
     public static bool KahootExists(string id)
     {
         foreach (string existing in GetAvailableKahoots())
@@ -119,7 +110,6 @@ public static class KahootManager
         return data;
     }
 
-    /// <summary>Validates and saves a new Kahoot. Returns its identifier (file name).</summary>
     public static string SaveKahoot(KahootData data)
     {
         InitializeFolders();
@@ -134,14 +124,12 @@ public static class KahootManager
         string tempPath = path + ".tmp";
         string json = JsonUtility.ToJson(data, true);
 
-        // Atomic write: a crash can never leave a half-written JSON behind.
         File.WriteAllText(tempPath, json);
         File.Move(tempPath, path);
 
         return id;
     }
 
-    /// <summary>Checks that the title can be used as a file name and returns it trimmed.</summary>
     public static string ToFileId(string title)
     {
         if (string.IsNullOrWhiteSpace(title))
@@ -157,10 +145,6 @@ public static class KahootManager
 
         if (id.EndsWith(".") || id.StartsWith("."))
             throw new FormatException("El título no puede empezar ni acabar en punto.");
-
-        foreach (string reserved in ReservedNames)
-            if (string.Equals(id, reserved, StringComparison.OrdinalIgnoreCase))
-                throw new FormatException("'" + id + "' es un nombre reservado del sistema.");
 
         return id;
     }

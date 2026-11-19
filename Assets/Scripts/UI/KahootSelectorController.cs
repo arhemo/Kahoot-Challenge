@@ -17,7 +17,7 @@ public class KahootSelectorController : MonoBehaviour
         RefreshKahoots();
     }
 
-    // Se lee la carpeta cada vez, asi los Kahoots nuevos aparecen sin reiniciar.
+    // Se lee la carpeta cada vez, asi los Kahoots nuevos aparecen sin reiniciar
     public void RefreshKahoots()
     {
         foreach (Transform child in contentParent)
@@ -51,7 +51,7 @@ public class KahootSelectorController : MonoBehaviour
                 }
                 catch (Exception ex)
                 {
-                    // Un Kahoot roto no impide ver los demas.
+                    // Un Kahoot roto no impide ver los demás
                     ExceptionManager.Log("Kahoot Selector", ex, "Invalid Kahoot file: " + kahootName);
                     info.text = "Archivo no válido (mira Informes de error)";
                     select.GetComponentInChildren<TMP_Text>().text = "NO VÁLIDO";

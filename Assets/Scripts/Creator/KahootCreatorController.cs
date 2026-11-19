@@ -56,7 +56,7 @@ public class KahootCreatorController : MonoBehaviour
                 questions = new List<KahootQuestion>()
             };
 
-            KahootManager.ToFileId(data.title);   // titulo obligatorio y valido como nombre de archivo
+            KahootManager.ToFileId(data.title); // título obligatorio y válido como nombre de archivo
 
             foreach (QuestionEditorItem item in questions)
                 data.questions.Add(item.GetQuestion());
@@ -66,7 +66,7 @@ public class KahootCreatorController : MonoBehaviour
         }
         catch (FormatException ex)
         {
-            // Error del usuario (campo vacio, titulo repetido...): solo se muestra en pantalla.
+            // Error del usuario (campo vacío, título repetido...): solo se muestra en pantalla
             statusText.text = ex.Message;
         }
         catch (Exception ex)

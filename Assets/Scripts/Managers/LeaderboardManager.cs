@@ -3,7 +3,6 @@ using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
 
-/// <summary>Reads and writes one XML leaderboard per Kahoot (named after the Kahoot identifier).</summary>
 public static class LeaderboardManager
 {
     private static string GetLeaderboardPath(string kahootId)
@@ -16,7 +15,6 @@ public static class LeaderboardManager
         return Path.Combine(KahootManager.LeaderboardsPath, safeName + ".xml");
     }
 
-    /// <summary>Returns an empty leaderboard when no XML exists; throws if the XML is damaged.</summary>
     public static LeaderboardData LoadLeaderboard(string kahootId)
     {
         KahootManager.InitializeFolders();
@@ -52,14 +50,12 @@ public static class LeaderboardManager
         using (FileStream stream = new FileStream(tempPath, FileMode.Create, FileAccess.Write))
             serializer.Serialize(stream, data);
 
-        // The previous XML is only discarded once the new one has been written completely.
         if (File.Exists(path))
             File.Delete(path);
 
         File.Move(tempPath, path);
     }
 
-    /// <summary>Adds a result and returns its 1-based position in the ranking.</summary>
     public static int AddResult(string kahootId, ScoreEntry newEntry, out int totalEntries)
     {
         LeaderboardData leaderboard;
@@ -70,9 +66,7 @@ public static class LeaderboardManager
         }
         catch (Exception ex)
         {
-            // Damaged XML: report it, keep a backup of the broken file and start a new ranking.
-            ExceptionManager.Log("Leaderboard", ex,
-                "The XML of '" + kahootId + "' is damaged. It was backed up as .corrupt and a new ranking was created.");
+            ExceptionManager.Log("Leaderboard", ex, "The XML of '" + kahootId + "' is damaged. It was backed up as .corrupt and a new ranking was created.");
 
             BackupCorruptFile(kahootId);
             leaderboard = new LeaderboardData();
@@ -87,7 +81,6 @@ public static class LeaderboardManager
         return leaderboard.entries.IndexOf(newEntry) + 1;
     }
 
-    /// <summary>Highest score first; ties are resolved by the shortest total time.</summary>
     public static void Sort(LeaderboardData data)
     {
         data.entries = data.entries

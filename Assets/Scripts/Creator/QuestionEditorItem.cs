@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-// Una pregunta del creador (prefab): enunciado, 4 respuestas, respuesta correcta y duracion.
 public class QuestionEditorItem : MonoBehaviour
 {
     [SerializeField] private TMP_Text questionTitle;
@@ -44,7 +43,6 @@ public class QuestionEditorItem : MonoBehaviour
 
         question.correctAnswerIndex = correctAnswerDropdown.value;
 
-        // Los decimales se escriben con punto (15.5); la coma tambien vale.
         if (!float.TryParse(durationInput.text.Replace(',', '.'), NumberStyles.Float, CultureInfo.InvariantCulture, out float duration))
             throw new FormatException("La duración de la pregunta no es válida.");
 
