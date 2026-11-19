@@ -1,8 +1,0 @@
-{
-    "title": "Valid External Kahoot",
-    "description": "Copied by hand into the Kahoots folder",
-    "questions": [
-        { "questionText": "2 + 2 = ?", "answers": ["3","4","5","22"], "correctAnswerIndex": 1, "durationSeconds": 10 },
-        { "questionText": "Capital of Spain?", "answers": ["Barcelona","Valencia","Madrid","Sevilla"], "correctAnswerIndex": 2, "durationSeconds": 12 }
-    ]
-}
