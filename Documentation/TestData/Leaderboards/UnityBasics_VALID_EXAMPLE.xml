@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Leaderboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Entry>
+    <username>Laura</username>
+    <score>6420</score>
+    <totalTime>44.1</totalTime>
+    <correctAnswers>8</correctAnswers>
+    <date>2026-11-08 18:20:11</date>
+  </Entry>
+  <Entry>
+    <username>Aaron</username>
+    <score>5870</score>
+    <totalTime>52.4</totalTime>
+    <correctAnswers>7</correctAnswers>
+    <date>2026-11-09 17:32:10</date>
+  </Entry>
+</Leaderboard>

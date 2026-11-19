@@ -1,0 +1,54 @@
+{
+    "title": "Unity Basics",
+    "description": "Pon a prueba tus conocimientos de Unity",
+    "questions": [
+        {
+            "questionText": "¿Qué es un GameObject?",
+            "answers": ["Un objeto de la escena", "Un lenguaje de programación", "Una textura", "Un sonido"],
+            "correctAnswerIndex": 0,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "¿Qué lenguaje usa Unity para los scripts?",
+            "answers": ["Python", "C#", "Java", "C++"],
+            "correctAnswerIndex": 1,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "¿Qué componente mueve, rota y escala un objeto?",
+            "answers": ["Rigidbody", "Collider", "Transform", "Animator"],
+            "correctAnswerIndex": 2,
+            "durationSeconds": 20
+        },
+        {
+            "questionText": "¿Qué método se ejecuta una vez por frame en un MonoBehaviour?",
+            "answers": ["Awake", "Update", "Start", "OnDestroy"],
+            "correctAnswerIndex": 1,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "¿Para qué sirve un Prefab?",
+            "answers": ["Compilar más rápido", "Reutilizar objetos ya configurados", "Grabar audio", "Dibujar gizmos"],
+            "correctAnswerIndex": 1,
+            "durationSeconds": 20
+        },
+        {
+            "questionText": "¿Qué ventana muestra las propiedades del objeto seleccionado?",
+            "answers": ["Hierarchy", "Project", "Console", "Inspector"],
+            "correctAnswerIndex": 3,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "¿Dónde se guardan los archivos de Application.persistentDataPath?",
+            "answers": ["Solo dentro del editor", "En el dispositivo, entre sesiones", "Solo en Resources", "Solo en la nube"],
+            "correctAnswerIndex": 1,
+            "durationSeconds": 25
+        },
+        {
+            "questionText": "¿Qué componente hace falta para detectar colisiones?",
+            "answers": ["Collider", "Canvas", "AudioSource", "Light"],
+            "correctAnswerIndex": 0,
+            "durationSeconds": 15
+        }
+    ]
+}

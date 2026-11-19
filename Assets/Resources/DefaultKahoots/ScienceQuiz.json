@@ -1,0 +1,54 @@
+{
+    "title": "Science Quiz",
+    "description": "Física, química y naturaleza",
+    "questions": [
+        {
+            "questionText": "¿Cuál es la fórmula química del agua?",
+            "answers": ["O2", "H2O", "CO2", "HO"],
+            "correctAnswerIndex": 1,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "¿Qué planeta se conoce como el Planeta Rojo?",
+            "answers": ["Venus", "Júpiter", "Marte", "Mercurio"],
+            "correctAnswerIndex": 2,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "¿Qué fuerza nos mantiene en el suelo?",
+            "answers": ["Magnetismo", "Fricción", "Gravedad", "Inercia"],
+            "correctAnswerIndex": 2,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "¿Cuántos huesos tiene un adulto?",
+            "answers": ["106", "206", "306", "406"],
+            "correctAnswerIndex": 1,
+            "durationSeconds": 20
+        },
+        {
+            "questionText": "¿Qué gas absorben las plantas del aire?",
+            "answers": ["Oxígeno", "Nitrógeno", "Dióxido de carbono", "Helio"],
+            "correctAnswerIndex": 2,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "¿Cuál es la velocidad aproximada de la luz?",
+            "answers": ["300.000 km/s", "300 km/s", "30.000 km/s", "3.000.000 km/s"],
+            "correctAnswerIndex": 0,
+            "durationSeconds": 20
+        },
+        {
+            "questionText": "¿Cuál es el material natural más duro?",
+            "answers": ["Oro", "Hierro", "Cuarzo", "Diamante"],
+            "correctAnswerIndex": 3,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "¿Cuál es el órgano más grande del cuerpo humano?",
+            "answers": ["La piel", "El hígado", "El cerebro", "El corazón"],
+            "correctAnswerIndex": 0,
+            "durationSeconds": 20
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "title": "Video Games Quiz",
+    "description": "Consolas, héroes y clásicos",
+    "questions": [
+        {
+            "questionText": "¿Qué empresa creó a Mario?",
+            "answers": ["Sega", "Sony", "Nintendo", "Atari"],
+            "correctAnswerIndex": 2,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "¿Cómo se llama la princesa que Link intenta rescatar?",
+            "answers": ["Peach", "Zelda", "Samus", "Daisy"],
+            "correctAnswerIndex": 1,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "¿Qué juego tiene bloques llamados tetrominós?",
+            "answers": ["Pac-Man", "Tetris", "Pong", "Snake"],
+            "correctAnswerIndex": 1,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "En Minecraft, ¿qué mob explota cerca del jugador?",
+            "answers": ["Zombi", "Esqueleto", "Creeper", "Enderman"],
+            "correctAnswerIndex": 2,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "¿Qué consola lanzó Sony en 1994?",
+            "answers": ["PlayStation", "Dreamcast", "Xbox", "Game Boy"],
+            "correctAnswerIndex": 0,
+            "durationSeconds": 20
+        },
+        {
+            "questionText": "¿Cuál es el videojuego más vendido de la historia?",
+            "answers": ["Tetris", "Minecraft", "GTA V", "Wii Sports"],
+            "correctAnswerIndex": 1,
+            "durationSeconds": 25
+        },
+        {
+            "questionText": "¿Qué erizo es la mascota de Sega?",
+            "answers": ["Knuckles", "Shadow", "Sonic", "Tails"],
+            "correctAnswerIndex": 2,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "¿En qué juego recoges anillos para sobrevivir?",
+            "answers": ["Sonic the Hedgehog", "Crash Bandicoot", "Spyro", "Rayman"],
+            "correctAnswerIndex": 0,
+            "durationSeconds": 20
+        }
+    ]
+}

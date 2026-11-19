@@ -1,0 +1,6 @@
+{
+    "title": "No Answers",
+    "questions": [
+        { "questionText": "Q?", "correctAnswerIndex": 0, "durationSeconds": 10 }
+    ]
+}

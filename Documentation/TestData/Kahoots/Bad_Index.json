@@ -1,0 +1,6 @@
+{
+    "title": "Bad Index",
+    "questions": [
+        { "questionText": "Q?", "answers": ["A","B","C","D"], "correctAnswerIndex": 9, "durationSeconds": 10 }
+    ]
+}

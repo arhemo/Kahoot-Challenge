@@ -1,0 +1,54 @@
+{
+    "title": "History Quiz",
+    "description": "Hechos y civilizaciones clave",
+    "questions": [
+        {
+            "questionText": "¿En qué año terminó la Segunda Guerra Mundial?",
+            "answers": ["1939", "1945", "1950", "1918"],
+            "correctAnswerIndex": 1,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "¿Qué civilización construyó las pirámides de Guiza?",
+            "answers": ["Romanos", "Griegos", "Egipcios", "Aztecas"],
+            "correctAnswerIndex": 2,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "¿Quién fue el primer emperador de Roma?",
+            "answers": ["Julio César", "Augusto", "Nerón", "Trajano"],
+            "correctAnswerIndex": 1,
+            "durationSeconds": 20
+        },
+        {
+            "questionText": "¿En qué año llegó Colón a América?",
+            "answers": ["1392", "1492", "1592", "1692"],
+            "correctAnswerIndex": 1,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "¿Qué muro cayó en 1989?",
+            "answers": ["La Gran Muralla", "El Muro de Adriano", "El Muro de Berlín", "El Muro de las Lamentaciones"],
+            "correctAnswerIndex": 2,
+            "durationSeconds": 15
+        },
+        {
+            "questionText": "¿Qué imperio gobernó Gengis Kan?",
+            "answers": ["Otomano", "Mongol", "Persa", "Bizantino"],
+            "correctAnswerIndex": 1,
+            "durationSeconds": 20
+        },
+        {
+            "questionText": "¿Dónde comenzó la Revolución Industrial?",
+            "answers": ["Francia", "España", "Gran Bretaña", "Rusia"],
+            "correctAnswerIndex": 2,
+            "durationSeconds": 20
+        },
+        {
+            "questionText": "¿Quién pintó el techo de la Capilla Sixtina?",
+            "answers": ["Leonardo da Vinci", "Rafael", "Donatello", "Miguel Ángel"],
+            "correctAnswerIndex": 3,
+            "durationSeconds": 20
+        }
+    ]
+}

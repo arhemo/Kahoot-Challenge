@@ -1,0 +1,6 @@
+{
+    "title": "Negative Time",
+    "questions": [
+        { "questionText": "Q?", "answers": ["A","B","C","D"], "correctAnswerIndex": 0, "durationSeconds": -10 }
+    ]
+}
